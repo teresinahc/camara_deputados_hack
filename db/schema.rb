@@ -11,34 +11,55 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150214045012) do
+ActiveRecord::Schema.define(version: 20150304042419) do
 
   create_table "deputados", force: :cascade do |t|
-    t.string   "nome",       limit: 255
-    t.string   "matricula",  limit: 255
-    t.string   "url_foto",   limit: 255
-    t.string   "partido",    limit: 255
-    t.string   "email",      limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.string   "nome",             limit: 255
+    t.string   "matricula",        limit: 255
+    t.string   "url_foto",         limit: 255
+    t.string   "partido",          limit: 255
+    t.string   "email",            limit: 255
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+    t.string   "uf",               limit: 255
+    t.integer  "id_cadastro",      limit: 4
+    t.string   "nome_parlamentar", limit: 255
   end
 
   create_table "despesas", force: :cascade do |t|
-    t.string   "matricula",     limit: 255
-    t.string   "beneficiario",  limit: 255
+    t.string   "matricula",                  limit: 255
+    t.string   "beneficiario",               limit: 255
     t.date     "data_emissao"
-    t.string   "valor_liquido", limit: 255
-    t.string   "cpf_cnpj",      limit: 255
-    t.integer  "num_mes",       limit: 4
-    t.integer  "num_ano",       limit: 4
-    t.integer  "num_parcela",   limit: 4
-    t.integer  "id_cadastro",   limit: 4
-    t.integer  "deputado_id",   limit: 4
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.string   "valor_liquido",              limit: 255
+    t.string   "cpf_cnpj",                   limit: 255
+    t.integer  "num_mes",                    limit: 4
+    t.integer  "num_ano",                    limit: 4
+    t.integer  "num_parcela",                limit: 4
+    t.integer  "id_cadastro",                limit: 4
+    t.integer  "deputado_id",                limit: 4
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
+    t.string   "descricao",                  limit: 255
+    t.string   "nome_parlamentar",           limit: 255
+    t.string   "valor_documento",            limit: 255
+    t.string   "valor_glosa",                limit: 255
+    t.integer  "num_lote",                   limit: 4
+    t.integer  "num_ressarcimento",          limit: 4
+    t.integer  "num_sub_cota",               limit: 4
+    t.integer  "num_especificacao_sub_cota", limit: 4
+    t.string   "numero",                     limit: 255
+    t.string   "url_recibo",                 limit: 255
   end
 
   add_index "despesas", ["deputado_id"], name: "index_despesas_on_deputado_id", using: :btree
+
+  create_table "versao_web_services", force: :cascade do |t|
+    t.string   "url",          limit: 255
+    t.string   "sha1hash",     limit: 255
+    t.date     "data_arquivo"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
 
   add_foreign_key "despesas", "deputados"
 end

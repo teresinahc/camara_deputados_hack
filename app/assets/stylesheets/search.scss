@@ -1,0 +1,254 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ *= require home
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@media only screen and (max-width: 600px) {
+	.search-result: {
+		text-align:center
+	};
+}
+
+/* Style */
+body {
+  background-color: rgba(51,51,51,1);
+}
+
+a{
+	color: #FDCA01;
+}
+
+.container {
+  position: relative;
+  top: 0;
+  padding-top: 7em;
+  padding-bottom: 4em;
+  margin-bottom: 0;
+} 
+.logo-box {
+  width: 200px;
+  display: block;
+  position: relative;
+  margin: 30px auto 30px auto;
+} 
+.peba-search {
+  padding: 1.3em 0.8em 1em;
+  max-width: 44em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  float: none;
+  width: 70%;
+}
+
+#info {
+  color:#FFF;
+  text-align:center;
+  margin:15px 0;
+  b {
+  	color: #FDCA01;
+  }
+}
+
+#results { 
+  .item { 
+    text-align:center;
+    b {
+      display:block
+    }
+    img {
+      display: inline-block;
+      margin: 10px auto;
+    }
+    .name {
+      color: #FDCA01;
+    }
+    .amount {
+      color:#FFF;
+    }
+  }
+}
+
+.circle {
+	height:150px;
+	width: 150px;
+	overflow: hidden;
+	background:#FFF;
+	border-radius: 75px;
+	display: inline-block;
+	margin:10px 0;
+	text-align: center;
+}
+
+#credits {
+	text-align:center;
+	padding-bottom: 20px;
+	a {
+		display: inline-block;
+		margin: 0 10px;
+		color: #999;
+	}
+}
+
+#search-results {
+	padding-bottom: 30px;
+}
+
+.search-result {
+	display: block;
+	padding: 30px;
+	border-bottom:1px solid #444;
+	&:hover {
+		background: #444;
+	}
+	.name{
+		color: #FDCA01;
+	}
+	ul li {
+		color: #FFF;
+		font-size: 17px;
+	}
+	.more-infos {
+		margin-top: 70px;
+		background: #FDCA01;
+		color: #333;
+		border-color: #FDCA01;
+		&:hover{
+			background: #D1A805;
+		}  
+	}
+}
+
+.paginator-wrapper {
+	text-align: center;
+}
+
+.pagination {
+	.active {
+		&:hover {
+			span{
+				background: #FDCA01;
+				border-color: #FDCA01; 
+			}
+		}
+		span {
+			background: #FDCA01;
+			border-color: #FDCA01; 
+		}
+	} 
+}
+
+.paginator-wrapper .btn {
+	color:#333;
+	border-color: #FDCA01; 	
+}
+
+.paginator-wrapper .btn-yellow {
+	background: #FDCA01;	
+}
+
+.pagination a, .pagination a span {
+	color: #333;
+}
+
+p {
+	color: #FFF;
+}
+
+p.small {
+	font-size:10px;
+}
+
+#expenses h3 {
+	color: #FFF;
+}
+#expenses table {
+	width: 100%;
+	color: #FFF;
+	margin-bottom: 30px;
+	thead th {
+		padding: 7px 5px;
+	}
+	tbody td {
+		padding: 5px 5px;
+	}
+	tbody tr:nth-child(odd) {
+		background-color: #444;
+	}
+}
+
+#description {
+	color: #FFF;
+	margin-bottom: 20px;
+	a{
+		color: #FDCA01;
+	}
+	h1{
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+	}
+	ul {
+		margin-top: 30px;
+	}
+	ul li {
+		font-size: 17px;
+	}
+}
+
+#logo {
+	text-align: center;
+	margin-top: 30px;
+}
+
+#search-form {
+	padding-top:40px;
+}
+
+#social-share {
+	text-align:center;
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+
+#update-info{
+	display: block;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#document {
+	padding-top: 3.5em;
+}	
+
+#search-page {
+	padding-top: 0.5em;
+}	
+
+#social {
+	text-align: center;
+	padding:10px 0;
+}
+
+#video-wrapper{
+	width: 502px;
+	height: 282px;
+	margin: 0 auto;
+}
+
+#filter label {
+	color: #FFF;
+}
