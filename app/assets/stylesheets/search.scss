@@ -55,9 +55,9 @@ a{
 }
 
 #info {
-  color:#FFF;
-  text-align:center;
-  margin:15px 0;
+  color: #FFF;
+  text-align: center;
+  margin: 15px 0;
   b {
     color: #FDCA01;
   }
@@ -65,9 +65,9 @@ a{
 
 #results {
   .item {
-    text-align:center;
+    text-align: center;
     b {
-      display:block
+      display: block
     }
     img {
       display: inline-block;
@@ -77,19 +77,19 @@ a{
       color: #FDCA01;
     }
     .amount {
-      color:#FFF;
+      color: #FFF;
     }
   }
 }
 
 .circle {
-  height:150px;
+  height: 150px;
   width: 150px;
   overflow: hidden;
-  background:#FFF;
+  background: #FFF;
   border-radius: 75px;
   display: inline-block;
-  margin:10px 0;
+  margin: 10px 0;
   text-align: center;
 }
 
@@ -110,11 +110,12 @@ a{
 .search-result {
   display: block;
   padding: 30px;
-  border-bottom:1px solid #444;
-  &:hover {
+  border-bottom: 1px solid #444;
+  &:hover,
+  &:focus {
     background: #444;
   }
-  .name{
+  .name {
     color: #FDCA01;
   }
   ul li {
@@ -126,7 +127,8 @@ a{
     background: #FDCA01;
     color: #333;
     border-color: #FDCA01;
-    &:hover{
+    &:hover,
+    &:focus {
       background: #D1A805;
     }
   }
@@ -138,7 +140,8 @@ a{
 
 .pagination {
   .active {
-    &:hover {
+    &:hover,
+    &:focus {
       span{
         background: #FDCA01;
         border-color: #FDCA01;
@@ -169,7 +172,7 @@ p {
 }
 
 p.small {
-  font-size:10px;
+  font-size: 10px;
 }
 
 #expenses h3 {
@@ -196,7 +199,7 @@ p.small {
   a {
     color: #FDCA01;
   }
-  h1{
+  h1 {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
@@ -235,7 +238,7 @@ p.small {
   padding-bottom: 15px;
 }
 
-#update-info{
+#update-info {
   display: block;
   text-align: center;
   margin-bottom: 20px;
@@ -254,7 +257,7 @@ p.small {
   padding:10px 0;
 }
 
-#video-wrapper{
+#video-wrapper {
   width: 502px;
   height: 282px;
   margin: 0 auto;

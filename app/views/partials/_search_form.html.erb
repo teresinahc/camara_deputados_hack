@@ -1,7 +1,7 @@
 <div class="row">
   <div class="center-box col-md-8 col-md-offset-2" >
     <div id="logo" >
-      <a href="<%= root_path %>" >
+      <a href="<%= root_path %>" title="Ir para a página inicial" accesskey="i">
         <%= image_tag 'peba_logo.png' %>
       </a>
     </div>
@@ -9,9 +9,9 @@
           <%= form_tag deputados_path, method: 'get', enforce_utf8: false do %>
         <div class="form-group" >
           <div class="input-group">
-              <%= text_field_tag :q, params[:q], :class => "form-control", :placeholder => "Procure por um deputado" %>
+              <%= text_field_tag :q, params[:q], :class => "form-control", :placeholder => "Diga o que deseja buscar." %>
             <span class="input-group-btn">
-              <button class="btn btn-default" type="submit">Cavar</button>
+              <button class="btn btn-default" type="submit" title="Iniciar uma busca">Cavar</button>
             </span>
           </div>
           <p class="help-block">Busque por nome, partido, estado, fornecedor, CPF, CNPJ... </p>
