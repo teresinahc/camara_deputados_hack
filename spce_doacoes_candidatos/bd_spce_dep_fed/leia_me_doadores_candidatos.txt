@@ -1,0 +1,24 @@
+Exemplo de registro
+CAMPO1;CAMPO2;CAMPO3;CAMPO4;CAMPO5;CAMPO6;CAMPO7;CAMPO8;CAMPO9;CAMP10;CAMP11;CAMP12;CAMP13;CAMP14;CAMP15;CAMP16;
+100000000080;A. RIBEIRO DA SILVA FILHO ;               03.525.993/0001-03 ; ;  ; 8/29/14 ;               051510600000MA000005 ; 8000.0 ;Estimado ;  ;ANDRÉ LUIS CARVALHO              RIBEIRO ;20.569.420/0001-09; 5151 ; PEN ; MARANHÃO ;;
+
+Campo 1=identificacao_scpe
+Campo 2=Nome do doador
+Campo 3=CPF/CNPJ do doador
+Campo 4=doador originario(usado para doacao indireta, via comite de campanha)
+Campo 5=cpf/cnpj originario(usado para doacao indireta, via comite de campanha)
+Campo 6=Data
+Campo 7=num. Recibo eleitoral
+Campo 8=Valor
+Campo 9=Espécie do recurso
+Campo 10=Nº Documento
+Campo 11=Nome do candidato
+Campo 12=Número
+Campo 13=Partido
+Campo 14=Cargo candidatura
+Campo 15=UF
+Campo 16=Fonte do recurso
+
+
+
+

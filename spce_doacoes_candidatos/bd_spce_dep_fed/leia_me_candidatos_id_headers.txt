@@ -1,0 +1,10 @@
+Exemplo de registro
+CAMPO1;CAMPO2;CAMPO3;CAMPO4;CAMPO5;CAMPO6;
+10000000173;AC; ALAN RICK MIRANDA ;1012; PRB ;
+
+
+Campo 1=identificacao_scpe
+Campo 2=UF
+Campo 3=Nome do candidato
+Campo 4=Numero do candidato
+Campo 5=partido
